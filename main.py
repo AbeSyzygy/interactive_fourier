@@ -52,4 +52,4 @@ def update_graph(freq1, freq2):
     return time_fig, freq_fig
 
 if __name__ == "__main__":
-    app.run_server(debug=True)
+    app.run(debug=True)
