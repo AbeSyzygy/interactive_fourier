@@ -1,4 +1,5 @@
 import numpy as np
+import os
 from dash import Dash, dcc, html, Input, Output
 import plotly.graph_objs as go
 
@@ -52,4 +53,4 @@ def update_graph(freq1, freq2):
     return time_fig, freq_fig
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False, host="0.0.0.0", port=int(os.environ.get("PORT", 8050)))
